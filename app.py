@@ -179,6 +179,8 @@ def index():
                            conclusion=conclusion,
                            selected_index=indice)
 
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'credentials-earthengine.json'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
