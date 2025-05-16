@@ -1,0 +1,5 @@
+Flask
+earthengine-api
+folium
+plotly
+gunicorn
